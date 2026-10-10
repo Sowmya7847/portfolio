@@ -1,10 +1,10 @@
 services:
-  - type: web
+  - type: static
     name: sowmya-jeedigunta-portfolio
-    runtime: static
-    buildCommand: npm install && npm run build
+    buildCommand: npm run build
     staticPublishPath: ./dist
     routes:
-      - type: rewrite
-        source: /*
+      - source: /*
         destination: /index.html
+        action: rewrite
+
