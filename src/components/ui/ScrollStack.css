@@ -7,8 +7,15 @@
 .scroll-stack-inner {
   position: relative;
   width: 100%;
-  padding-top: 4vh;
-  padding-bottom: 50vh; /* creates the runway so all cards stack and lock at the top */
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+}
+
+@media (min-width: 768px) {
+  .scroll-stack-inner {
+    padding-top: 4vh;
+    padding-bottom: 50vh; /* creates runway so cards stack and lock at the top on desktop */
+  }
 }
 
 .scroll-stack-card {

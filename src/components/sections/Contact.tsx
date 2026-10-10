@@ -13,12 +13,12 @@ export const Contact: React.FC = () => {
   return (
     <footer
       id="contact"
-      className="relative w-full bg-[#F3EBDD] text-[#111111] font-sans selection:bg-[#2563EB]/20 selection:text-[#080808] pt-20 pb-20 px-6 sm:px-12 lg:px-20 border-t border-[#080808]/10 overflow-hidden"
+      className="relative w-full bg-[#F3EBDD] text-[#111111] font-sans selection:bg-[#2563EB]/20 selection:text-[#080808] pt-20 pb-20 px-4 sm:px-8 lg:px-16 border-t border-[#080808]/10 overflow-hidden"
     >
       <div className="max-w-7xl mx-auto w-full relative z-10">
         
         {/* Split Grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-start">
           
           {/* Left Column (5 Cols) */}
           <div className="lg:col-span-5 flex flex-col justify-between">
@@ -49,7 +49,7 @@ export const Contact: React.FC = () => {
                 className="mb-6"
               >
                 <h2
-                  className="text-5xl sm:text-6xl md:text-7xl tracking-tight uppercase leading-[0.85] select-none"
+                  className="text-4xl sm:text-6xl md:text-7xl tracking-tight uppercase leading-[0.88] select-none"
                   style={{ fontFamily: "'Bebas Neue', sans-serif" }}
                 >
                   <span className="block text-transparent bg-clip-text bg-gradient-to-b from-[#080808] via-[#111111] to-[#151515] drop-shadow-[0_2px_12px_rgba(0,0,0,0.12)]">
@@ -91,27 +91,35 @@ export const Contact: React.FC = () => {
                   </a>
                 </div>
 
-                <div className="pt-2 flex flex-col gap-2.5">
+                <div className="pt-2 flex flex-col gap-3">
                   <a
                     href="https://www.linkedin.com/in/sowmyajeedigunta-7201a633a"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 text-[#151515] hover:text-[#2563EB] transition-colors py-1 group"
+                    className="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-2 text-[#151515] hover:text-[#2563EB] transition-colors py-1 group overflow-hidden"
                   >
-                    <span className="text-[#2563EB] group-hover:translate-x-0.5 transition-transform">&rarr;</span>
-                    <span className="text-[#080808] font-semibold">LinkedIn:</span>
-                    <span className="text-[11px] underline underline-offset-2 text-[#163A70]">https://www.linkedin.com/in/sowmyajeedigunta-7201a633a</span>
+                    <div className="flex items-center gap-1.5 shrink-0">
+                      <span className="text-[#2563EB] group-hover:translate-x-0.5 transition-transform">&rarr;</span>
+                      <span className="text-[#080808] font-semibold">LinkedIn:</span>
+                    </div>
+                    <span className="text-[11px] underline underline-offset-2 text-[#163A70] break-all truncate max-w-full sm:max-w-[320px]">
+                      linkedin.com/in/sowmyajeedigunta-7201a633a
+                    </span>
                   </a>
 
                   <a
                     href="https://github.com/Sowmya784"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 text-[#151515] hover:text-[#2563EB] transition-colors py-1 group"
+                    className="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-2 text-[#151515] hover:text-[#2563EB] transition-colors py-1 group overflow-hidden"
                   >
-                    <span className="text-[#2563EB] group-hover:translate-x-0.5 transition-transform">&rarr;</span>
-                    <span className="text-[#080808] font-semibold">GitHub:</span>
-                    <span className="text-[11px] underline underline-offset-2 text-[#163A70]">https://github.com/Sowmya784</span>
+                    <div className="flex items-center gap-1.5 shrink-0">
+                      <span className="text-[#2563EB] group-hover:translate-x-0.5 transition-transform">&rarr;</span>
+                      <span className="text-[#080808] font-semibold">GitHub:</span>
+                    </div>
+                    <span className="text-[11px] underline underline-offset-2 text-[#163A70] break-all truncate max-w-full sm:max-w-[320px]">
+                      github.com/Sowmya784
+                    </span>
                   </a>
                 </div>
               </div>
@@ -124,7 +132,7 @@ export const Contact: React.FC = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
-            className="lg:col-span-7 relative w-full rounded-sm border border-[#163A70] bg-[#0D274D] p-8 sm:p-10 shadow-[0_20px_50px_rgba(13,39,77,0.18)] overflow-hidden"
+            className="lg:col-span-7 relative w-full rounded-sm border border-[#163A70] bg-[#0D274D] p-5 sm:p-8 md:p-10 shadow-[0_20px_50px_rgba(13,39,77,0.18)] overflow-hidden"
           >
             {/* Top Blue Horizon Edge */}
             <div className="absolute top-0 left-0 right-0 h-[1px] bg-gradient-to-r from-transparent via-[#2563EB]/70 to-transparent" />

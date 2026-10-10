@@ -33,7 +33,7 @@ export const Achievements: React.FC = () => {
   return (
     <section
       id="achievements"
-      className="relative w-full bg-[#F3EBDD] text-[#111111] font-sans selection:bg-[#2563EB]/20 selection:text-[#080808] py-24 lg:py-32 px-6 sm:px-12 lg:px-20 border-t border-[#080808]/10 overflow-hidden"
+      className="relative w-full bg-[#F3EBDD] text-[#111111] font-sans selection:bg-[#2563EB]/20 selection:text-[#080808] py-16 sm:py-24 lg:py-32 px-4 sm:px-8 lg:px-16 border-t border-[#080808]/10 overflow-hidden"
     >
       <div className="max-w-7xl mx-auto w-full relative z-10">
         
@@ -43,7 +43,7 @@ export const Achievements: React.FC = () => {
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
-          className="flex items-center space-x-4 mb-5"
+          className="flex items-center space-x-4 mb-4 sm:mb-5"
         >
           <span
             className="text-[11px] font-medium tracking-[0.35em] uppercase text-[#163A70]"
@@ -60,10 +60,10 @@ export const Achievements: React.FC = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
-          className="mb-14"
+          className="mb-10 sm:mb-14"
         >
           <h2
-            className="text-5xl sm:text-6xl md:text-7xl lg:text-[5.5rem] tracking-tight uppercase leading-[0.85] select-none"
+            className="text-4xl sm:text-6xl md:text-7xl lg:text-[5.5rem] tracking-tight uppercase leading-[0.88] select-none"
             style={{ fontFamily: "'Bebas Neue', sans-serif" }}
           >
             <span className="block text-transparent bg-clip-text bg-gradient-to-b from-[#080808] via-[#111111] to-[#151515] drop-shadow-[0_2px_12px_rgba(0,0,0,0.12)]">
@@ -76,7 +76,7 @@ export const Achievements: React.FC = () => {
         </motion.div>
 
         {/* Achievements Cards */}
-        <div className="space-y-6">
+        <div className="space-y-4 sm:space-y-6">
           {achievementsList.map((item, idx) => (
             <motion.div
               key={item.title}
@@ -84,14 +84,14 @@ export const Achievements: React.FC = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.8, delay: idx * 0.1 }}
-              className="relative p-8 rounded-sm border border-[#080808]/10 bg-[#FAF6EF] shadow-[0_4px_24px_rgba(0,0,0,0.04)] group overflow-hidden transition-all duration-500 hover:border-[#163A70] hover:bg-[#FFF9EF]"
+              className="relative p-5 sm:p-8 rounded-sm border border-[#080808]/10 bg-[#FAF6EF] shadow-[0_4px_24px_rgba(0,0,0,0.04)] group overflow-hidden transition-all duration-500 hover:border-[#163A70] hover:bg-[#FFF9EF]"
             >
               <div className="absolute top-0 left-0 w-3 h-3 border-t border-l border-[#163A70]/50 group-hover:border-[#163A70]" />
               <div className="absolute top-0 right-0 w-3 h-3 border-t border-r border-[#163A70]/50 group-hover:border-[#163A70]" />
               <div className="absolute bottom-0 left-0 w-3 h-3 border-b border-l border-[#163A70]/50 group-hover:border-[#163A70]" />
               <div className="absolute bottom-0 right-0 w-3 h-3 border-b border-r border-[#163A70]/50 group-hover:border-[#163A70]" />
 
-              <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-12 items-baseline relative z-10">
+              <div className="grid grid-cols-1 lg:grid-cols-12 gap-4 lg:gap-12 items-baseline relative z-10">
                 <div className="lg:col-span-5 space-y-2">
                   <div className="flex flex-wrap items-center gap-2 font-mono text-xs">
                     <span className="text-[#FFF9EF] font-semibold px-2.5 py-0.5 rounded bg-[#163A70] border border-[#163A70]">
@@ -112,7 +112,7 @@ export const Achievements: React.FC = () => {
                   </h3>
                 </div>
 
-                <div className="lg:col-span-7 space-y-3">
+                <div className="lg:col-span-7 space-y-2.5 sm:space-y-3">
                   <p
                     className="text-xs sm:text-sm md:text-[14px] text-[#151515] font-light leading-relaxed"
                     style={{ fontFamily: "'Montserrat', sans-serif" }}
@@ -120,11 +120,11 @@ export const Achievements: React.FC = () => {
                     &ldquo;{item.description}&rdquo;
                   </p>
 
-                  <div className="font-mono text-xs text-[#151515]/80 tracking-wide flex flex-wrap items-center gap-2 pt-1">
+                  <div className="font-mono text-xs text-[#151515]/80 tracking-wide flex flex-wrap items-center gap-1.5 sm:gap-2 pt-1">
                     <span className="text-[#2563EB] text-[10px] tracking-widest uppercase">
                       TECH:
                     </span>
-                    <span>{item.technologies}</span>
+                    <span className="text-[11px]">{item.technologies}</span>
                   </div>
                 </div>
               </div>

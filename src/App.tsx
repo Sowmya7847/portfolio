@@ -21,7 +21,7 @@ export const App: React.FC = () => {
       duration: 1.2,
       easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
       smoothWheel: true,
-      touchMultiplier: 1.5,
+      syncTouch: false,
     });
 
     let animationFrameId: number;
@@ -40,7 +40,7 @@ export const App: React.FC = () => {
   }, []);
 
   return (
-    <div className="relative min-h-screen bg-background text-foreground selection:bg-accent/20 selection:text-white">
+    <div className="relative w-full min-h-screen overflow-x-hidden bg-background text-foreground selection:bg-accent/20 selection:text-white">
       {/* 3D Cinematic Ambient Atmosphere & Particles Canvas */}
       <AmbientAtmosphere />
 
@@ -54,10 +54,10 @@ export const App: React.FC = () => {
       />
 
       {/* Main Layout Pipeline */}
-      <div className="relative z-10 flex flex-col min-h-screen">
+      <div className="relative z-10 flex flex-col min-h-screen w-full overflow-x-hidden">
         <Navbar />
 
-        <main className="flex-1">
+        <main className="flex-1 w-full overflow-x-hidden">
           <Hero />
           <About />
           <Skills />

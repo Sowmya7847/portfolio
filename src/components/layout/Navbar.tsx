@@ -42,12 +42,12 @@ export const Navbar: React.FC = () => {
           : 'bg-transparent py-5 md:py-7 border-b border-transparent'
       }`}
     >
-      <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16 flex items-center justify-between">
+      <div className="max-w-7xl mx-auto px-4 sm:px-8 lg:px-16 flex items-center justify-between">
         {/* Brand Name */}
         <a
           href="#hero"
           onClick={(e) => handleLinkClick(e, '#hero')}
-          className="group flex items-center gap-2.5 font-display text-xs sm:text-sm font-semibold tracking-[0.25em] text-[#080808] hover:text-[#163A70] transition-colors uppercase"
+          className="group flex items-center gap-2 font-display text-[11px] sm:text-xs md:text-sm font-semibold tracking-[0.2em] sm:tracking-[0.25em] text-[#080808] hover:text-[#163A70] transition-colors uppercase shrink-0"
           style={{ fontFamily: "'Montserrat', sans-serif" }}
         >
           <span className="inline-block w-1.5 h-1.5 rounded-full bg-[#2563EB] shadow-[0_0_10px_rgba(37,99,235,0.7)] group-hover:scale-125 transition-transform" />

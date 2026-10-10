@@ -28,7 +28,7 @@ export const Leadership: React.FC = () => {
   return (
     <section
       id="leadership"
-      className="relative w-full bg-[#F3EBDD] text-[#111111] font-sans selection:bg-[#2563EB]/20 selection:text-[#080808] py-24 lg:py-32 px-6 sm:px-12 lg:px-20 border-t border-[#080808]/10 overflow-hidden"
+      className="relative w-full bg-[#F3EBDD] text-[#111111] font-sans selection:bg-[#2563EB]/20 selection:text-[#080808] py-16 sm:py-24 lg:py-32 px-4 sm:px-8 lg:px-16 border-t border-[#080808]/10 overflow-hidden"
     >
       <div className="max-w-7xl mx-auto w-full relative z-10">
         
@@ -38,7 +38,7 @@ export const Leadership: React.FC = () => {
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
-          className="flex items-center space-x-4 mb-5"
+          className="flex items-center space-x-4 mb-4 sm:mb-5"
         >
           <span
             className="text-[11px] font-medium tracking-[0.35em] uppercase text-[#163A70]"
@@ -55,10 +55,10 @@ export const Leadership: React.FC = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
-          className="mb-14"
+          className="mb-10 sm:mb-14"
         >
           <h2
-            className="text-5xl sm:text-6xl md:text-7xl lg:text-[5.5rem] tracking-tight uppercase leading-[0.85] select-none"
+            className="text-4xl sm:text-6xl md:text-7xl lg:text-[5.5rem] tracking-tight uppercase leading-[0.88] select-none"
             style={{ fontFamily: "'Bebas Neue', sans-serif" }}
           >
             <span className="block text-transparent bg-clip-text bg-gradient-to-b from-[#080808] via-[#111111] to-[#151515] drop-shadow-[0_2px_12px_rgba(0,0,0,0.12)]">
@@ -76,23 +76,23 @@ export const Leadership: React.FC = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
-          className="relative p-8 sm:p-12 rounded-sm border border-[#080808]/10 bg-[#FAF6EF] shadow-[0_4px_24px_rgba(0,0,0,0.04)] group overflow-hidden transition-all duration-500 hover:border-[#163A70] mb-8"
+          className="relative p-5 sm:p-8 md:p-12 rounded-sm border border-[#080808]/10 bg-[#FAF6EF] shadow-[0_4px_24px_rgba(0,0,0,0.04)] group overflow-hidden transition-all duration-500 hover:border-[#163A70] mb-8"
         >
           <div className="absolute top-0 left-0 w-4 h-4 border-t-2 border-l-2 border-[#163A70]/50 group-hover:border-[#163A70]" />
           <div className="absolute top-0 right-0 w-4 h-4 border-t-2 border-r-2 border-[#163A70]/50 group-hover:border-[#163A70]" />
           <div className="absolute bottom-0 left-0 w-4 h-4 border-b-2 border-l-2 border-[#163A70]/50 group-hover:border-[#163A70]" />
           <div className="absolute bottom-0 right-0 w-4 h-4 border-b-2 border-r-2 border-[#163A70]/50 group-hover:border-[#163A70]" />
 
-          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-8 border-b border-[#080808]/10 relative z-10">
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-6 sm:pb-8 border-b border-[#080808]/10 relative z-10">
             <div>
               <span
-                className="text-[10px] font-medium tracking-[0.25em] uppercase text-[#163A70] block mb-2"
+                className="text-[10px] font-medium tracking-[0.25em] uppercase text-[#163A70] block mb-1.5 sm:mb-2"
                 style={{ fontFamily: "'Montserrat', sans-serif" }}
               >
                 EXECUTIVE TENURE
               </span>
               <h3
-                className="text-3xl sm:text-4xl tracking-wide uppercase text-[#080808] group-hover:text-[#163A70] transition-colors"
+                className="text-2xl sm:text-3xl md:text-4xl tracking-wide uppercase text-[#080808] group-hover:text-[#163A70] transition-colors"
                 style={{ fontFamily: "'Bebas Neue', sans-serif" }}
               >
                 ACM STUDENT CHAPTER
@@ -106,7 +106,7 @@ export const Leadership: React.FC = () => {
             </div>
 
             <div className="sm:text-right font-mono text-xs">
-              <span className="text-[#FFF9EF] font-semibold px-3 py-1 rounded bg-[#163A70] border border-[#163A70] block sm:inline-block mb-1.5">
+              <span className="text-[#FFF9EF] font-semibold px-3 py-1 rounded bg-[#163A70] border border-[#163A70] inline-block mb-1 sm:mb-1.5">
                 PRESIDENT
               </span>
               <div className="text-[#151515]/70 text-[11px] tracking-wider">
@@ -115,19 +115,19 @@ export const Leadership: React.FC = () => {
             </div>
           </div>
 
-          <div className="pt-8 relative z-10">
+          <div className="pt-6 sm:pt-8 relative z-10">
             <span
-              className="text-[10px] font-medium tracking-[0.25em] uppercase text-[#163A70] block mb-6"
+              className="text-[10px] font-medium tracking-[0.25em] uppercase text-[#163A70] block mb-4 sm:mb-6"
               style={{ fontFamily: "'Montserrat', sans-serif" }}
             >
               COORDINATED CHAPTER INITIATIVES
             </span>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
               {initiatives.map((item, idx) => (
                 <div
                   key={item.name}
-                  className="p-6 rounded-sm bg-[#E9DECC] border border-[#080808]/10 space-y-2 hover:border-[#163A70]/50 transition-colors"
+                  className="p-4 sm:p-6 rounded-sm bg-[#E9DECC] border border-[#080808]/10 space-y-2 hover:border-[#163A70]/50 transition-colors"
                 >
                   <div className="flex items-center gap-2 font-mono text-xs text-[#080808] font-medium tracking-wider">
                     <span className="text-[#2563EB]">0{idx + 1}</span>

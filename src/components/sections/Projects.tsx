@@ -57,7 +57,7 @@ export const Projects: React.FC = () => {
   return (
     <section
       id="projects"
-      className="relative w-full bg-[#F3EBDD] text-[#111111] font-sans selection:bg-[#2563EB]/20 selection:text-[#080808] pt-20 pb-32 px-6 sm:px-12 lg:px-20 border-t border-[#080808]/10"
+      className="relative w-full bg-[#F3EBDD] text-[#111111] font-sans selection:bg-[#2563EB]/20 selection:text-[#080808] pt-16 sm:pt-20 pb-20 sm:pb-32 px-4 sm:px-8 lg:px-16 border-t border-[#080808]/10 overflow-hidden"
     >
       {/* Studio Ambient Deep Blue Glows */}
       <div className="absolute top-1/4 left-1/3 w-[36rem] h-[36rem] bg-[#163A70]/5 rounded-full blur-[180px] pointer-events-none" />
@@ -71,7 +71,7 @@ export const Projects: React.FC = () => {
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
-          className="flex items-center space-x-4 mb-5"
+          className="flex items-center space-x-4 mb-4 sm:mb-5"
         >
           <span
             className="text-[11px] font-medium tracking-[0.35em] uppercase text-[#163A70]"
@@ -88,10 +88,10 @@ export const Projects: React.FC = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.9, ease: [0.16, 1, 0.3, 1] }}
-          className="flex flex-col md:flex-row md:items-end justify-between mb-16"
+          className="flex flex-col md:flex-row md:items-end justify-between mb-10 sm:mb-16"
         >
           <h2
-            className="text-5xl sm:text-6xl md:text-7xl lg:text-[5.5rem] tracking-tight uppercase leading-[0.85] select-none"
+            className="text-4xl sm:text-6xl md:text-7xl lg:text-[5.5rem] tracking-tight uppercase leading-[0.88] select-none"
             style={{ fontFamily: "'Bebas Neue', sans-serif" }}
           >
             <span className="block text-transparent bg-clip-text bg-gradient-to-b from-[#080808] via-[#111111] to-[#151515] drop-shadow-[0_2px_12px_rgba(0,0,0,0.12)]">
@@ -103,10 +103,10 @@ export const Projects: React.FC = () => {
           </h2>
 
           <p
-            className="text-xs sm:text-sm font-normal text-[#151515] max-w-sm mt-4 md:mt-0 leading-relaxed"
+            className="text-xs sm:text-sm font-normal text-[#151515] max-w-sm mt-3 md:mt-0 leading-relaxed"
             style={{ fontFamily: "'Montserrat', sans-serif" }}
           >
-            Scroll down to unfold the system architecture cards developed through academic coursework and engineering initiatives.
+            Scroll down to explore the system architecture cards developed through academic coursework and engineering initiatives.
           </p>
         </motion.div>
 
@@ -122,30 +122,30 @@ export const Projects: React.FC = () => {
         >
           {projects.map((project) => (
             <ScrollStackItem key={project.title}>
-              <div className="relative w-full rounded-2xl border border-[#163A70] bg-[#0D274D] p-8 sm:p-12 shadow-[0_20px_60px_rgba(13,39,77,0.22)] group overflow-hidden transition-colors duration-500 hover:border-[#2563EB]">
+              <div className="relative w-full rounded-2xl border border-[#163A70] bg-[#0D274D] p-5 sm:p-8 md:p-12 shadow-[0_20px_60px_rgba(13,39,77,0.22)] group overflow-hidden transition-colors duration-500 hover:border-[#2563EB]">
                 
                 {/* Top Blue Border Light Flare */}
                 <div className="absolute top-0 left-0 right-0 h-[1px] bg-gradient-to-r from-transparent via-[#2563EB]/70 to-transparent" />
 
                 {/* Corner Minimal L-Brackets */}
-                <div className="absolute top-0 left-0 w-4 h-4 border-t-2 border-l-2 border-[#6B93C9]/70 group-hover:border-[#2563EB] transition-colors" />
-                <div className="absolute top-0 right-0 w-4 h-4 border-t-2 border-r-2 border-[#6B93C9]/70 group-hover:border-[#2563EB] transition-colors" />
-                <div className="absolute bottom-0 left-0 w-4 h-4 border-b-2 border-l-2 border-[#6B93C9]/70 group-hover:border-[#2563EB] transition-colors" />
-                <div className="absolute bottom-0 right-0 w-4 h-4 border-b-2 border-r-2 border-[#6B93C9]/70 group-hover:border-[#2563EB] transition-colors" />
+                <div className="absolute top-0 left-0 w-3.5 h-3.5 sm:w-4 sm:h-4 border-t-2 border-l-2 border-[#6B93C9]/70 group-hover:border-[#2563EB] transition-colors" />
+                <div className="absolute top-0 right-0 w-3.5 h-3.5 sm:w-4 sm:h-4 border-t-2 border-r-2 border-[#6B93C9]/70 group-hover:border-[#2563EB] transition-colors" />
+                <div className="absolute bottom-0 left-0 w-3.5 h-3.5 sm:w-4 sm:h-4 border-b-2 border-l-2 border-[#6B93C9]/70 group-hover:border-[#2563EB] transition-colors" />
+                <div className="absolute bottom-0 right-0 w-3.5 h-3.5 sm:w-4 sm:h-4 border-b-2 border-r-2 border-[#6B93C9]/70 group-hover:border-[#2563EB] transition-colors" />
 
                 {/* Big Background Watermark Number */}
                 <span
-                  className="absolute -bottom-6 -right-3 text-8xl sm:text-9xl font-bold text-[#24528C]/15 select-none pointer-events-none leading-none"
+                  className="absolute -bottom-6 -right-3 text-7xl sm:text-8xl md:text-9xl font-bold text-[#24528C]/15 select-none pointer-events-none leading-none"
                   style={{ fontFamily: "'Bebas Neue', sans-serif" }}
                 >
                   {project.number}
                 </span>
 
-                <div className="relative z-10 space-y-6">
+                <div className="relative z-10 space-y-4 sm:space-y-6">
                   {/* Category & Index */}
                   <div className="flex items-center gap-3">
                     <span
-                      className="text-xs font-mono font-medium tracking-[0.25em] text-[#6B93C9]"
+                      className="text-[10px] sm:text-xs font-mono font-medium tracking-wider sm:tracking-[0.25em] text-[#6B93C9]"
                     >
                       {project.number} // {project.subtitle.toUpperCase()}
                     </span>
@@ -153,7 +153,7 @@ export const Projects: React.FC = () => {
 
                   {/* Title */}
                   <h3
-                    className="text-3xl sm:text-5xl md:text-6xl tracking-tight uppercase leading-[0.9] text-[#FFF9EF] group-hover:text-white transition-colors"
+                    className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl tracking-tight uppercase leading-[0.92] text-[#FFF9EF] group-hover:text-white transition-colors"
                     style={{ fontFamily: "'Bebas Neue', sans-serif" }}
                   >
                     {project.title}
@@ -168,11 +168,11 @@ export const Projects: React.FC = () => {
                   </p>
 
                   {/* Technology Tags */}
-                  <div className="pt-2 flex flex-wrap gap-2">
+                  <div className="pt-1 flex flex-wrap gap-1.5 sm:gap-2">
                     {project.technologies.map((t) => (
                       <span
                         key={t}
-                        className="text-[10px] sm:text-[11px] font-mono tracking-wider px-2.5 py-1 rounded bg-[#0A1A33] border border-[#163A70] text-[#FAF6EF]"
+                        className="text-[10px] sm:text-[11px] font-mono tracking-wider px-2 sm:px-2.5 py-0.5 sm:py-1 rounded bg-[#0A1A33] border border-[#163A70] text-[#FAF6EF]"
                       >
                         {t}
                       </span>

@@ -6,8 +6,8 @@ export const Footer: React.FC = () => {
   };
 
   return (
-    <footer className="border-t border-[#080808]/10 bg-[#E9DECC] py-16 text-[#151515]/70 text-xs font-mono">
-      <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+    <footer className="border-t border-[#080808]/10 bg-[#E9DECC] py-12 sm:py-16 text-[#151515]/70 text-xs font-mono">
+      <div className="max-w-7xl mx-auto px-4 sm:px-8 lg:px-16 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
         <div className="space-y-1">
           <p className="text-[#080808] text-sm font-display font-medium tracking-wide">
             SOWMYA JEEDIGUNTA

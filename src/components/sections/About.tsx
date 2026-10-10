@@ -70,7 +70,7 @@ export const About: React.FC = () => {
   return (
     <section 
       id="about" 
-      className="relative w-full min-h-screen bg-[#F3EBDD] text-[#111111] font-sans selection:bg-[#2563EB]/20 selection:text-[#080808] py-24 lg:py-32 px-6 sm:px-12 lg:px-20 overflow-hidden flex items-center border-t border-[#080808]/10"
+      className="relative w-full min-h-screen bg-[#F3EBDD] text-[#111111] font-sans selection:bg-[#2563EB]/20 selection:text-[#080808] py-16 sm:py-24 lg:py-32 px-4 sm:px-8 lg:px-16 overflow-hidden flex items-center border-t border-[#080808]/10"
     >
       {/* Background Deep Blue Ambient Glows */}
       <motion.div 
@@ -92,7 +92,7 @@ export const About: React.FC = () => {
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.9, ease: [0.16, 1, 0.3, 1] }}
-          className="flex items-center space-x-4 mb-10"
+          className="flex items-center space-x-4 mb-6 sm:mb-10"
         >
           <span 
             className="text-[11px] font-medium tracking-[0.35em] uppercase text-[#163A70]"
@@ -104,7 +104,7 @@ export const About: React.FC = () => {
         </motion.div>
 
         {/* Main Grid: Content + 3D Portrait Frame */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center">
           
           {/* ================= LEFT CONTENT (7 COLS) ================= */}
           <motion.div
@@ -115,9 +115,9 @@ export const About: React.FC = () => {
             className="lg:col-span-7 flex flex-col justify-center"
           >
             {/* Cinematic Headline */}
-            <motion.div variants={fadeUpVariants} className="relative mb-6 select-none">
+            <motion.div variants={fadeUpVariants} className="relative mb-4 sm:mb-6 select-none">
               <h2
-                className="text-5xl sm:text-6xl md:text-7xl lg:text-[5.4rem] tracking-tight uppercase leading-[0.88]"
+                className="text-4xl sm:text-6xl md:text-7xl lg:text-[5.4rem] tracking-tight uppercase leading-[0.88]"
                 style={{ fontFamily: "'Bebas Neue', sans-serif" }}
               >
                 <span className="block text-transparent bg-clip-text bg-gradient-to-b from-[#080808] via-[#111111] to-[#151515] drop-shadow-[0_2px_12px_rgba(0,0,0,0.12)]">
@@ -132,52 +132,50 @@ export const About: React.FC = () => {
             {/* Verbatim Resume Bio Paragraph */}
             <motion.p
               variants={fadeUpVariants}
-              className="text-xs sm:text-sm md:text-[14.5px] font-normal text-[#151515] leading-[1.85] tracking-wide mb-8 max-w-xl"
+              className="text-xs sm:text-sm md:text-[14.5px] font-normal text-[#151515] leading-[1.8] sm:leading-[1.85] tracking-wide mb-6 sm:mb-8 max-w-xl"
               style={{ fontFamily: "'Montserrat', sans-serif" }}
             >
               Computer Science graduate with a strong foundation in software engineering, web development, application development, programming, and problem-solving. Hands-on experience developing software applications and AI-powered solutions through academic projects, hackathons, and collaborative initiatives. Demonstrates strong analytical, communication, and teamwork skills with the ability to quickly adapt to new technologies.
             </motion.p>
 
-
-
-            {/* Academic Credentials Row */}
+            {/* Academic Credentials Row - 3 Clean Columns on all screens */}
             <motion.div 
               variants={fadeUpVariants}
-              className="grid grid-cols-2 sm:grid-cols-3 gap-6 pt-6 border-t border-[#080808]/10"
+              className="grid grid-cols-3 gap-2 sm:gap-6 pt-5 sm:pt-6 border-t border-[#080808]/10"
             >
               <div className="flex flex-col">
                 <span 
-                  className="text-2xl sm:text-3xl font-light text-[#080808] tracking-tight"
+                  className="text-xl sm:text-3xl font-light text-[#080808] tracking-tight"
                   style={{ fontFamily: "'Bebas Neue', sans-serif" }}
                 >
                   8.79
                 </span>
-                <span className="text-[10px] font-medium tracking-[0.22em] uppercase text-[#163A70] mt-0.5">
+                <span className="text-[9px] sm:text-[10px] font-medium tracking-wider sm:tracking-[0.22em] uppercase text-[#163A70] mt-0.5 truncate">
                   B.Tech CGPA
                 </span>
               </div>
 
               <div className="flex flex-col">
                 <span 
-                  className="text-2xl sm:text-3xl font-light text-[#163A70] tracking-tight"
+                  className="text-xl sm:text-3xl font-light text-[#163A70] tracking-tight"
                   style={{ fontFamily: "'Bebas Neue', sans-serif" }}
                 >
                   2022–2026
                 </span>
-                <span className="text-[10px] font-medium tracking-[0.22em] uppercase text-[#151515]/70 mt-0.5">
-                  Anurag University
+                <span className="text-[9px] sm:text-[10px] font-medium tracking-wider sm:tracking-[0.22em] uppercase text-[#151515]/70 mt-0.5 truncate">
+                  Anurag Univ.
                 </span>
               </div>
 
               <div className="flex flex-col">
                 <span 
-                  className="text-2xl sm:text-3xl font-light text-[#080808] tracking-tight"
+                  className="text-xl sm:text-3xl font-light text-[#080808] tracking-tight"
                   style={{ fontFamily: "'Bebas Neue', sans-serif" }}
                 >
                   ACM
                 </span>
-                <span className="text-[10px] font-medium tracking-[0.22em] uppercase text-[#163A70] mt-0.5">
-                  Chapter President
+                <span className="text-[9px] sm:text-[10px] font-medium tracking-wider sm:tracking-[0.22em] uppercase text-[#163A70] mt-0.5 truncate">
+                  Chapter Pres.
                 </span>
               </div>
             </motion.div>
@@ -254,7 +252,7 @@ export const About: React.FC = () => {
               </div>
 
               {/* Portrait Image Canvas with 3D Holographic Character */}
-              <div className="relative overflow-hidden w-full max-w-[390px] aspect-[4/5] bg-[#0A101D] rounded-sm">
+              <div className="relative overflow-hidden w-full max-w-[280px] sm:max-w-[340px] md:max-w-[390px] aspect-[4/5] bg-[#0A101D] rounded-sm">
                 <img
                   src={sowmyaAboutImg}
                   alt="Sowmya Jeedigunta"
